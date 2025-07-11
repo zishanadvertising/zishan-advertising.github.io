@@ -857,6 +857,48 @@ section,
   bottom: 0;
 }
 
+ .service-item {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            border-radius: 1rem; /* Equivalent to rounded-xl */
+        }
+        .service-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important; /* Stronger shadow on hover */
+        }
+        .service-item .icon {
+            width: 5rem; /* Equivalent to w-20 */
+            height: 5rem; /* Equivalent to h-20 */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            margin-bottom: 1.5rem; /* Equivalent to mb-6 */
+            color: #fff;
+            font-size: 2rem; /* Equivalent to text-3xl */
+            box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); /* Equivalent to shadow-md */
+        }
+        /* Custom colors for service items to match original Tailwind colors */
+        .item-cyan .icon { background-color: #06b6d4; } /* Tailwind cyan-500 */
+        .item-orange .icon { background-color: #f97316; } /* Tailwind orange-500 */
+        .item-teal .icon { background-color: #14b8a6; } /* Tailwind teal-500 */
+        .item-red .icon { background-color: #ef4444; } /* Tailwind red-500 */
+        .item-indigo .icon { background-color: #6366f1; } /* Tailwind indigo-500 */
+        .item-pink .icon { background-color: #ec4899; } /* Tailwind pink-500 */
+
+        /* Custom text colors for links */
+        .text-cyan-600 { color: #0891b2; } /* Tailwind cyan-600 */
+        .text-cyan-800:hover { color: #155e75; } /* Tailwind cyan-800 */
+        .text-orange-600 { color: #ea580c; } /* Tailwind orange-600 */
+        .text-orange-800:hover { color: #9a3412; } /* Tailwind orange-800 */
+        .text-teal-600 { color: #0d9488; } /* Tailwind teal-600 */
+        .text-teal-800:hover { color: #115e59; } /* Tailwind teal-800 */
+        .text-red-600 { color: #dc2626; } /* Tailwind red-600 */
+        .text-red-800:hover { color: #991b1b; } /* Tailwind red-800 */
+        .text-indigo-600 { color: #4f46e5; } /* Tailwind indigo-600 */
+        .text-indigo-800:hover { color: #3730a3; } /* Tailwind indigo-800 */
+        .text-pink-600 { color: #db2777; } /* Tailwind pink-600 */
+        .text-pink-800:hover { color: #9d174d; } /* Tailwind pink-800 */
+
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
